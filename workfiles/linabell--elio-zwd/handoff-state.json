@@ -1,0 +1,64 @@
+{
+  "project": "LinaBell Codex Pet v2",
+  "repository": "elio-zwd/awesome-codex-pet",
+  "planning_branch": "feat/linabell-pet-direction-a",
+  "recommended_final_branch": "feat/add-linabell-pet-v2",
+  "pet_id": "linabell--elio-zwd",
+  "status": "direction-b-ready",
+  "completed": [
+    "repository permission confirmed",
+    "planning branch created",
+    "three reference images reviewed",
+    "character definition locked",
+    "pink spring outfit selected",
+    "blue sailor outfit deferred",
+    "v2 88-cell action map documented",
+    "metadata drafts created",
+    "initial duplicate search completed",
+    "one usable generated full-body base concept produced in prior chat"
+  ],
+  "blocked_until_user_uploads": [
+    "successful generated full-body base concept from prior chat"
+  ],
+  "optional_reuploads": [
+    "three original reference images for identity checking"
+  ],
+  "canonical_base_policy": "After the user re-uploads and approves the successful generated full-body concept, treat it as the sole canonical grounding image for all animation rows and look directions.",
+  "runtime": {
+    "version": 2,
+    "atlas_width": 1536,
+    "atlas_height": 2288,
+    "columns": 8,
+    "rows": 11,
+    "cell_width": 192,
+    "cell_height": 208,
+    "total_cells": 88
+  },
+  "row_order": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "running",
+    "review",
+    "look-000-to-157.5",
+    "look-180-to-337.5"
+  ],
+  "next_action": "Read all planning files, ask the user to upload the generated base concept, obtain visual approval, then create idle, waving and review as the first three identity-validation rows.",
+  "must_not_do": [
+    "do not modify main",
+    "do not mix the blue sailor outfit into the main atlas",
+    "do not upload or commit the private photographic references",
+    "do not create a final PR before user visual approval and validation",
+    "do not merge the planning workfiles into the final submission PR",
+    "do not claim tests passed without running them"
+  ],
+  "final_package": [
+    "pets/linabell--elio-zwd/submission.json",
+    "pets/linabell--elio-zwd/pet.json",
+    "pets/linabell--elio-zwd/spritesheet.webp"
+  ]
+}
