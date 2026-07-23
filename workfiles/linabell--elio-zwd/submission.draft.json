@@ -1,0 +1,37 @@
+{
+  "slug": "linabell--elio-zwd",
+  "pet_slug": "linabell",
+  "author_slug": "elio-zwd",
+  "name": "LinaBell",
+  "localized_names": {
+    "en": "LinaBell",
+    "zh": "玲娜贝儿"
+  },
+  "author": "Elio",
+  "author_handle": "elio-zwd",
+  "author_url": "https://github.com/elio-zwd",
+  "primary_category": "Mascots",
+  "canonical_key": "fictional/disney/duffy-and-friends/linabell",
+  "tags": [
+    "fan-art",
+    "duffy-and-friends",
+    "linabell",
+    "pink-fox",
+    "plush",
+    "detective"
+  ],
+  "collections": [],
+  "source_type": "fan-art",
+  "source_url": "https://www.shanghaidisneyresort.com/zh-cn/experience?group=characters",
+  "license": "Non-commercial fan use only. Independently generated fan art; no official source pixels, logos, screenshots, or reference photographs are included. Underlying character rights belong to Disney.",
+  "description": "An independently generated LinaBell fan-art Codex pet in a pink spring outfit, with plush styling, expressive blue eyes, a fluffy tail, curious detective gestures, and a complete v2 animation set.",
+  "preview_image": "../../assets/previews/linabell--elio-zwd/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/linabell--elio-zwd/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/linabell--elio-zwd/gifs"
+  }
+}
