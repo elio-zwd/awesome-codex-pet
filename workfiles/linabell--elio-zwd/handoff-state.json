@@ -4,7 +4,7 @@
   "planning_branch": "feat/linabell-pet-direction-a",
   "recommended_final_branch": "feat/add-linabell-pet-v2",
   "pet_id": "linabell--elio-zwd",
-  "status": "direction-b-ready",
+  "status": "canonical-base-approved",
   "completed": [
     "repository permission confirmed",
     "planning branch created",
@@ -15,15 +15,24 @@
     "v2 88-cell action map documented",
     "metadata drafts created",
     "initial duplicate search completed",
-    "one usable generated full-body base concept produced in prior chat"
+    "independently generated full-body canonical base created",
+    "canonical base visually approved by user",
+    "canonical base production copy committed to planning branch"
   ],
-  "blocked_until_user_uploads": [
-    "successful generated full-body base concept from prior chat"
-  ],
+  "blocked_until_user_uploads": [],
   "optional_reuploads": [
-    "three original reference images for identity checking"
+    "three original reference images for identity checking only; never commit them"
   ],
-  "canonical_base_policy": "After the user re-uploads and approves the successful generated full-body concept, treat it as the sole canonical grounding image for all animation rows and look directions.",
+  "canonical_base_policy": "The approved generated full-body concept is the sole canonical grounding image for all animation rows and look directions. Do not replace it unless the user rejects it or a blocking defect is discovered.",
+  "canonical_base": {
+    "path": "workfiles/linabell--elio-zwd/assets/canonical-base.webp",
+    "format": "webp",
+    "repository_copy_dimensions": "256x341",
+    "source_generation_dimensions": "1086x1448",
+    "approved_at": "2026-07-23",
+    "approval": "user explicitly said the generated image can be used and instructed the task to continue",
+    "reference_policy": "independently generated fan art; the three private reference photographs are not committed"
+  },
   "runtime": {
     "version": 2,
     "atlas_width": 1536,
@@ -47,9 +56,10 @@
     "look-000-to-157.5",
     "look-180-to-337.5"
   ],
-  "next_action": "Read all planning files, ask the user to upload the generated base concept, obtain visual approval, then create idle, waving and review as the first three identity-validation rows.",
+  "next_action": "Generate idle, waving and review as three separately grounded eight-frame identity-validation rows, perform per-row frame extraction and motion QA, then show a three-row contact sheet and previews for user approval.",
   "must_not_do": [
     "do not modify main",
+    "do not replace the approved canonical base without a blocking reason",
     "do not mix the blue sailor outfit into the main atlas",
     "do not upload or commit the private photographic references",
     "do not create a final PR before user visual approval and validation",
