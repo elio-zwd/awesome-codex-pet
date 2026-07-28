@@ -4,34 +4,94 @@
   "planning_branch": "feat/linabell-pet-direction-a",
   "recommended_final_branch": "feat/add-linabell-pet-v2",
   "pet_id": "linabell--elio-zwd",
-  "status": "canonical-base-approved",
+  "status": "visual-rebaseline-candidate",
   "completed": [
     "repository permission confirmed",
     "planning branch created",
-    "three reference images reviewed",
+    "three private reference images reviewed without committing them",
     "character definition locked",
     "pink spring outfit selected",
     "blue sailor outfit deferred",
     "v2 88-cell action map documented",
     "metadata drafts created",
     "initial duplicate search completed",
-    "independently generated full-body canonical base created",
-    "canonical base visually approved by user",
-    "canonical base production copy committed to planning branch"
+    "first independently generated full-body canonical base created and approved",
+    "first canonical base production copy committed to planning branch",
+    "new coherent 2x4 idle candidate received",
+    "new coherent 2x4 waving candidate received",
+    "new coherent 2x4 review candidate received",
+    "visual rebaseline plan committed",
+    "visual rebaseline task checklist committed"
   ],
   "blocked_until_user_uploads": [],
   "optional_reuploads": [
     "three original reference images for identity checking only; never commit them"
   ],
-  "canonical_base_policy": "The approved generated full-body concept is the sole canonical grounding image for all animation rows and look directions. Do not replace it unless the user rejects it or a blocking defect is discovered.",
+  "canonical_base_policy": "The previously approved canonical base remains the official base until the user explicitly approves the new three-row visual family. Because the new idle, waving and review sheets use a visibly revised but internally coherent design, do not generate the remaining rows from either baseline until extraction, transparency cleanup, motion previews and the visual rebaseline approval gate are complete. After approval, promote a neutral frame from the new family and stop grounding future rows on the old base.",
   "canonical_base": {
     "path": "workfiles/linabell--elio-zwd/assets/canonical-base.webp",
     "format": "webp",
     "repository_copy_dimensions": "256x341",
     "source_generation_dimensions": "1086x1448",
     "approved_at": "2026-07-23",
-    "approval": "user explicitly said the generated image can be used and instructed the task to continue",
-    "reference_policy": "independently generated fan art; the three private reference photographs are not committed"
+    "approval": "user explicitly approved the first generated base",
+    "current_role": "official until visual rebaseline approval; generation paused while replacement candidate is reviewed",
+    "reference_policy": "independently generated fan art; private photographic references are not committed"
+  },
+  "visual_rebaseline": {
+    "received_at": "2026-07-28",
+    "status": "candidate-not-yet-approved",
+    "source_layout": "2x4 per action sheet",
+    "source_dimensions": "1448x1086 per PNG",
+    "source_alpha": "RGBA container with alpha fully opaque; purple background must be removed",
+    "candidate_rows": {
+      "idle": {
+        "assessment": "accepted for extraction and preview",
+        "strengths": [
+          "stable identity and costume",
+          "clear blink sequence",
+          "stable tail side",
+          "clean loop endpoints"
+        ],
+        "checks_required": [
+          "verify non-blink micro-motion at 192x208",
+          "detect near-duplicate frames",
+          "remove purple background and edge spill"
+        ]
+      },
+      "waving": {
+        "assessment": "best current waving candidate; accepted for extraction and preview",
+        "strengths": [
+          "same paw used throughout",
+          "clear raise-wave-lower sequence",
+          "no motion lines",
+          "stable costume and tail"
+        ],
+        "checks_required": [
+          "verify distinct outward and inward beats",
+          "normalize body scale and paw height",
+          "inspect paw pads after transparency cleanup"
+        ]
+      },
+      "review": {
+        "assessment": "accepted for extraction and preview",
+        "strengths": [
+          "clipboard present in every frame",
+          "continuous review workflow",
+          "blank stable prop",
+          "identity consistent with idle and waving"
+        ],
+        "checks_required": [
+          "verify clipboard handedness and size",
+          "inspect free paw anatomy at pet size",
+          "normalize head and clipboard registration",
+          "verify frame 8 to frame 1 closure"
+        ]
+      }
+    },
+    "plan_path": "workfiles/linabell--elio-zwd/direction-b-visual-rebaseline-plan.md",
+    "tasks_path": "workfiles/linabell--elio-zwd/direction-b-visual-rebaseline-tasks.md",
+    "approval_gate": "extract and normalize 24 transparent 192x208 cells, create three loop previews and a three-row contact sheet, then obtain explicit user approval that this family replaces the old canonical visual base"
   },
   "runtime": {
     "version": 2,
@@ -56,14 +116,15 @@
     "look-000-to-157.5",
     "look-180-to-337.5"
   ],
-  "next_action": "Generate idle, waving and review as three separately grounded eight-frame identity-validation rows, perform per-row frame extraction and motion QA, then show a three-row contact sheet and previews for user approval.",
+  "next_action": "Extract the new idle, waving and review 2x4 candidate sheets into 24 frames, remove the opaque purple background, normalize to transparent 192x208 cells, produce three motion previews and one three-row contact sheet, then stop for explicit visual rebaseline approval before generating the remaining six standard rows.",
   "must_not_do": [
     "do not modify main",
-    "do not replace the approved canonical base without a blocking reason",
+    "do not mix the old and new visual baselines",
+    "do not generate remaining rows before rebaseline approval",
     "do not mix the blue sailor outfit into the main atlas",
     "do not upload or commit the private photographic references",
     "do not create a final PR before user visual approval and validation",
-    "do not merge the planning workfiles into the final submission PR",
+    "do not merge planning workfiles into the final submission PR",
     "do not claim tests passed without running them"
   ],
   "final_package": [
