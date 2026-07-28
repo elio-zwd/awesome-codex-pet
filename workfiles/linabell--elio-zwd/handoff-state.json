@@ -4,7 +4,7 @@
   "planning_branch": "feat/linabell-pet-direction-a",
   "recommended_final_branch": "feat/add-linabell-pet-v2",
   "pet_id": "linabell--elio-zwd",
-  "status": "visual-rebaseline-image1-review-preview-ready",
+  "status": "running-right-revision-needed",
   "completed": [
     "repository permission confirmed",
     "planning branch created",
@@ -12,58 +12,41 @@
     "character definition and pink spring outfit locked",
     "Codex Pet v2 88-cell map and metadata drafts documented",
     "generated workfiles allowed in planning branch while final PR stays three-file-only",
-    "idle row extracted, cleaned, normalized and previewed",
-    "waving row extracted, cleaned, normalized and previewed",
-    "initial review row processed",
-    "user identified a third-paw anatomy defect in initial review frame 4",
-    "initial defective review row rejected",
-    "user selected image 1 as the replacement review source",
-    "image 1 third row extracted into eight review frames",
-    "dark background removed from image 1 review frames",
-    "image 1 review frames normalized to transparent 192x208 cells",
-    "updated review GIF and three-row contact sheets generated",
-    "no visible third paw in the image 1 replacement review row",
-    "image 1 selection and processing notes committed to planning branch"
+    "idle row extracted, cleaned, normalized and approved",
+    "waving row extracted, cleaned, normalized and approved",
+    "initial defective third-paw review row rejected",
+    "image 1 third row adopted, cleaned, normalized and approved as review",
+    "user explicitly approved idle + waving + image 1 review as the production visual baseline",
+    "first running-right candidate received and QA preview generated"
   ],
   "asset_policy": {
     "generated_workfiles": "AI-generated candidate sheets, derived frame assets and QA previews may be committed under planning workfiles for provenance and handoff.",
     "private_photographic_references": "Private original photographs and direct traced or cropped derivatives must never be committed to the public repository.",
     "final_pr_scope": "The clean final submission PR remains limited to submission.json, pet.json and spritesheet.webp."
   },
-  "canonical_base_policy": "The original canonical base remains official until the user explicitly approves the updated identity family. After approval, use the approved idle/waving family plus image 1 Review as the sole production grounding style and do not mix the old visual baseline into later rows.",
+  "canonical_base_policy": "The approved idle/waving family plus image 1 Review are the official production grounding style for all remaining rows. Do not mix the old visual baseline into later rows.",
   "visual_rebaseline": {
-    "status": "updated-previews-ready-for-user-approval",
-    "normalized_cell_dimensions": "192x208",
-    "normalized_row_dimensions": "1536x208",
-    "idle": {
-      "status": "unchanged and awaiting joint visual approval",
-      "source": "previous approved cleaned idle row"
-    },
-    "waving": {
-      "status": "unchanged and awaiting joint visual approval",
-      "source": "previous approved cleaned waving row"
-    },
-    "review": {
-      "status": "replaced with image 1 third row and awaiting approval",
-      "rejected_source_issue": "initial processed review frame 4 contained a third paw",
-      "selected_source": "image 1",
-      "selected_scope": "third row only, eight frames left to right",
-      "anatomy_check": "one clipboard-holding paw and at most one free paw per frame; no visible third paw",
-      "clipboard_check": "clipboard remains present with no readable text",
-      "local_assets": [
-        "/mnt/data/linabell_image1_final/review-row-image1.png",
-        "/mnt/data/linabell_image1_final/review-preview-image1.gif",
-        "/mnt/data/linabell_image1_final/identity-contact-sheet-image1.png",
-        "/mnt/data/linabell_image1_final/identity-contact-light-image1.png",
-        "/mnt/data/linabell_image1_final/identity-contact-dark-image1.png",
-        "/mnt/data/linabell_image1_final/processing-report-image1.json"
-      ],
-      "planning_notes": [
-        "workfiles/linabell--elio-zwd/assets/generated-candidates/review-image1-selection.md",
-        "workfiles/linabell--elio-zwd/assets/generated-candidates/image1-review-processing-note.md"
-      ]
-    },
-    "approval_gate": "Show the updated three-row contact sheet and image 1 Review GIF. Obtain explicit approval before starting running-right."
+    "status": "approved",
+    "idle": "approved",
+    "waving": "approved",
+    "review": "approved from image 1 third row"
+  },
+  "running_right": {
+    "status": "candidate-rejected-for-motion-revision",
+    "source_dimensions": "1536x1024",
+    "layout": "2x4, eight frames",
+    "identity_assessment": "passed: character, outfit, hat flower, tail and plush style are stable",
+    "motion_assessment": "failed: the legs do not form a clearly alternating two-sided run cycle",
+    "near_duplicate_pairs": [
+      "frames 4 and 8 are effectively the same pose",
+      "frames 2 and 3 are very similar"
+    ],
+    "required_revision": "regenerate a true alternating run cycle with distinct contact, passing and airborne poses; only frame 8 may return close to frame 1",
+    "local_qa_assets": [
+      "/mnt/data/linabell_running_right_qa/running-right-candidate.gif",
+      "/mnt/data/linabell_running_right_qa/running-right-numbered.png",
+      "/mnt/data/linabell_running_right_qa/running-right-qa.json"
+    ]
   },
   "runtime": {
     "version": 2,
@@ -75,25 +58,12 @@
     "cell_height": 208,
     "total_cells": 88
   },
-  "row_order": [
-    "idle",
-    "running-right",
-    "running-left",
-    "waving",
-    "jumping",
-    "failed",
-    "waiting",
-    "running",
-    "review",
-    "look-000-to-157.5",
-    "look-180-to-337.5"
-  ],
-  "next_action": "Stop at the updated identity visual gate. If the user approves image 1 Review together with the unchanged Idle and Waving rows, promote the new visual baseline and begin running-right. If rejected, repair only Review.",
+  "next_action": "Regenerate running-right with stronger alternating leg and paw phases while preserving the accepted identity and costume.",
   "must_not_do": [
     "do not modify main",
     "do not reuse the rejected third-paw review row",
-    "do not mix old and new visual baselines after approval",
-    "do not generate remaining rows before identity approval",
+    "do not accept the first running-right candidate as a final row",
+    "do not mix old and new visual baselines",
     "do not mix the blue sailor outfit into the main atlas",
     "do not upload or commit private photographic references",
     "do not create or merge the final PR before visual approval and validation",
