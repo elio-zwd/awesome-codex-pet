@@ -1,0 +1,1 @@
+Image 1 processing completed locally: third row extracted as the replacement review family, dark background removed, eight frames normalized to 192x208, and updated review/contact previews generated. The previous review frame-4 third-paw defect is not present in this replacement. Binary preview replacement remains pending the visual approval gate.
