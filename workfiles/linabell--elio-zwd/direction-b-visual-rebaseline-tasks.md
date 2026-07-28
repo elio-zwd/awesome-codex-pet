@@ -10,25 +10,15 @@
 
 ## Phase R0 — preserve source and record provenance
 
-- [x] Receive three new `2x4` candidate sheets for `idle`, `waving` and `review`.
-- [x] Confirm all three source files are PNG containers at `1448x1086`.
-- [x] Confirm their alpha channels are fully opaque and the purple background requires removal.
-- [x] Confirm the three sheets share one coherent new character style.
-- [x] Commit compact generated row previews to `workfiles/linabell--elio-zwd/assets/generated-candidates/`.
-- [x] Record file names, roles, source layout and provenance in the generated-candidates README.
-- [x] Never commit the private photographic reference images.
-
-Tracked generated previews:
-
-```text
-workfiles/linabell--elio-zwd/assets/generated-candidates/idle-row-preview.webp
-workfiles/linabell--elio-zwd/assets/generated-candidates/waving-row-preview.webp
-workfiles/linabell--elio-zwd/assets/generated-candidates/review-row-preview.webp
-```
+- [x] Receive generated candidates for `idle`, `waving` and `review`.
+- [x] Confirm the initial three source files are PNG containers at `1448x1086` with opaque purple backgrounds.
+- [x] Commit compact generated previews and provenance notes under `workfiles/`.
+- [x] Permit generated workfiles in the planning branch.
+- [x] Never commit private photographic reference images.
 
 ## Phase R1 — split and identify frames
 
-Frame order used for every candidate sheet:
+Frame order for the original `2x4` candidates:
 
 ```text
 top row:    frame 1, frame 2, frame 3, frame 4
@@ -37,69 +27,68 @@ bottom row: frame 5, frame 6, frame 7, frame 8
 
 ### Idle
 
-- [x] Detect and crop all eight idle silhouettes.
-- [x] Verify no frame is an exact accidental duplicate.
-- [x] Verify the blink sequence is ordered correctly.
-- [x] Verify tail placement and body orientation remain stable.
+- [x] Extract eight frames.
+- [x] Verify ordered blink sequence, stable tail side and body orientation.
+- [x] Confirm no exact accidental duplicate.
 
 ### Waving
 
-- [x] Detect and crop all eight waving silhouettes.
-- [x] Confirm the same paw is used in frames 2 through 7.
-- [x] Confirm the raised-paw poses form distinct wave beats.
-- [x] Confirm frame 7 lowers the same paw and frame 8 returns to neutral.
+- [x] Extract eight frames.
+- [x] Confirm one consistent waving paw and a raise-wave-lower sequence.
+- [x] Confirm frame 8 returns close to neutral.
 
-### Review
+### Review — replacement history
 
-- [x] Detect and crop all eight review silhouettes.
-- [x] Confirm the clipboard remains attached in all eight frames.
-- [x] Confirm no readable text appears on the clipboard.
-- [x] Confirm the action reads as inspect → think → notice → confirm.
+- [x] Extract and process the first new review candidate.
+- [x] Detect, after user inspection, that its review frame 4 contains an extra third paw.
+- [x] Reject the defective processed review row; do not reuse it in the final atlas.
+- [x] User selected **image 1** as the replacement source.
+- [x] Record the selection in `assets/generated-candidates/review-image1-selection.md`.
+- [x] Use only image 1’s third row as the replacement eight-frame `review` family.
+- [x] Preserve the approved `idle` and `waving` rows unchanged.
+- [x] Confirm the image 1 replacement has one clipboard-holding paw and at most one free paw per frame; no visible third paw.
+- [x] Confirm the clipboard remains present and contains no readable text.
 
-## Phase R2 — remove purple background cleanly
+## Phase R2 — background cleanup
 
-- [x] Build a non-destructive first-pass purple-background removal workflow for the generated sheets.
-- [x] Remove the purple background family from all 24 frames.
-- [x] Apply first-pass purple edge despill and clear fully transparent pixels.
-- [x] Inspect fur edges on checkerboard, light and dark review sheets.
+- [x] Remove the purple backgrounds from the original identity rows.
+- [x] Remove image 1’s dark studio background from the replacement review frames by connected-background segmentation.
+- [x] Apply first-pass edge feathering, background-color unmixing and transparent-pixel cleanup.
+- [x] Inspect replacement Review on checkerboard, light and dark backgrounds.
 
-> This is the identity-gate cleanup. Final atlas transparency and hidden-RGB QA must still be repeated during Stage B7 after all 88 cells exist.
+> Full hidden-RGB and edge QA must be repeated after all 88 cells exist.
 
 ## Phase R3 — normalize runtime cells
 
-- [x] Normalize each extracted frame to transparent `192x208`.
-- [x] Keep a stable body center and foot baseline within each row.
-- [x] Preserve complete ears, tail, raised paw and clipboard within bounds.
-- [x] Export all 24 normalized PNG frames for QA.
-- [x] Reassemble three transparent `1536x208` row images.
+- [x] Normalize all approved identity frames to transparent `192x208` cells.
+- [x] Keep feet near y=203 with stable body registration.
+- [x] Preserve full ears, tail, waving paw and clipboard.
+- [x] Reassemble transparent `1536x208` rows.
+- [x] Replace the local Review QA row with the image 1 third-row extraction.
 
 ## Phase R4 — motion QA previews
 
-- [x] Reassemble idle frames into a loop preview.
-- [x] Reassemble waving frames into a loop preview.
-- [x] Reassemble review frames into a loop preview.
-- [x] Produce checkerboard, light and dark three-row contact sheets.
-- [x] Confirm no exact duplicate frames in any row.
-- [x] Confirm waving has the strongest action separation and a close frame-8-to-frame-1 return.
-- [x] Record that idle is intentionally subtle and needs user judgment at the visual gate.
+- [x] Reassemble Idle and Waving previews.
+- [x] Rebuild Review preview from image 1.
+- [x] Rebuild checkerboard, light and dark three-row contact sheets.
+- [x] Confirm the old third-paw Review preview is superseded.
 
-Local QA artifacts:
+Updated local QA artifacts:
 
 ```text
-/mnt/data/linabell_rebaseline/identity-contact-sheet.png
-/mnt/data/linabell_rebaseline/identity-contact-light.png
-/mnt/data/linabell_rebaseline/identity-contact-dark.png
-/mnt/data/linabell_rebaseline/idle-preview.gif
-/mnt/data/linabell_rebaseline/waving-preview.gif
-/mnt/data/linabell_rebaseline/review-preview.gif
+/mnt/data/linabell_image1_final/review-row-image1.png
+/mnt/data/linabell_image1_final/review-preview-image1.gif
+/mnt/data/linabell_image1_final/identity-contact-sheet-image1.png
+/mnt/data/linabell_image1_final/identity-contact-light-image1.png
+/mnt/data/linabell_image1_final/identity-contact-dark-image1.png
+/mnt/data/linabell_image1_final/processing-report-image1.json
 ```
 
 ## Phase R5 — visual rebaseline gate
 
-- [-] Show the cleaned three-row contact sheet and three loop previews to the user.
-- [ ] Obtain explicit approval that the new three-sheet family replaces the old canonical production base.
-- [ ] If approved, promote a neutral frame from the new family as the production grounding reference for all remaining rows.
-- [ ] If rejected, preserve the generated workfiles but resume from the previously approved base.
+- [-] Show the updated contact sheet and image 1 Review preview to the user.
+- [ ] Obtain explicit approval that `idle`, `waving` and the image 1 `review` row replace the old canonical production base.
+- [ ] After approval, promote a neutral frame from the new family as the grounding reference for remaining rows.
 
 ## Phase R6 — remaining production
 
@@ -113,4 +102,4 @@ Blocked until Phase R5 approval:
 - [ ] Generate `waiting`.
 - [ ] Generate four cardinal look anchors.
 - [ ] Generate the sixteen look directions.
-- [ ] Assemble final atlas, repeat full transparency QA, run validation and follow the clean PR workflow.
+- [ ] Assemble the final atlas, repeat transparency QA, run validation and follow the clean PR workflow.
