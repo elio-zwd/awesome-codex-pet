@@ -38,182 +38,84 @@ All three new sheets:
 - preserve the same spring outfit family, green neck bow, paired cherries and skirt decoration;
 - keep the hat flower on one consistent canonical side;
 - keep a single attached tail with stable side placement and pale tip;
-- avoid text, logos, scenery, speech bubbles and detached effects;
-- use matching body scale and rendering quality across the three actions.
+- are high enough resolution for later frame extraction and downscaling.
 
 ### 2.2 Idle candidate
 
 Strengths:
 
-- stable forward-facing body;
-- clear blink sequence;
-- consistent tail placement and costume;
-- strong loop closure between the final and first poses.
+- coherent eight-pose idle candidate;
+- readable blink cycle;
+- stable body scale and baseline;
+- no detached props or gesture confusion.
 
-Remaining work:
+Checks still required after extraction:
 
-- motion is currently dominated by blinking and needs measured frame-to-frame registration to confirm that breathing and settling are visible at `192x208`;
-- duplicate or near-duplicate frames may need small local adjustments after extraction;
-- the sheet background is visually purple and the PNG alpha channel is fully opaque, so transparency still requires deterministic removal.
-
-Disposition: **candidate accepted for extraction and motion preview; not yet final-approved**.
+- confirm that the body-breathing and settle motion remain visible at `192x208`;
+- confirm that frame 8 loops naturally back to frame 1;
+- verify that tail motion is not so small that the row becomes visually static.
 
 ### 2.3 Waving candidate
 
 Strengths:
 
-- one consistent waving paw is used throughout;
-- the paw rises, remains near the head, waves, lowers and returns to neutral;
-- the gesture remains readable without motion lines;
-- the other paw, feet, costume and tail remain stable.
+- clear greeting semantics;
+- one paw remains the dominant waving paw through the loop;
+- no detached action marks;
+- good costume/identity stability.
 
-Remaining work:
+Checks still required after extraction:
 
-- confirm that frames 3 through 6 produce a visible outward/inward wave after normalization;
-- normalize small body-scale and paw-height differences;
-- verify that paw pads and arm attachment remain clean after background removal.
-
-Disposition: **best current waving candidate; proceed to extraction and preview**.
+- confirm the same waving paw is used consistently in frames 2–7 after splitting;
+- confirm the wave beats remain readable at runtime cell size;
+- confirm no cropping of the raised paw or tail in normalized cells.
 
 ### 2.4 Review candidate
 
 Strengths:
 
-- the pink clipboard remains present and physically held in all eight poses;
-- the sequence reads as ready, inspect, point, think, notice, verify, approve and reset;
-- clipboard design and color remain stable;
-- no readable text or floating icons are present;
-- character identity remains consistent with the idle and waving sheets.
+- the pink clipboard remains visible in all eight poses;
+- the sequence communicates inspect → think → notice → confirm;
+- the character identity remains close to the idle and waving candidates.
 
-Remaining work:
+Checks still required after extraction:
 
-- verify consistent clipboard handedness and size after per-frame cropping;
-- check that the free paw does not create human-finger shapes at pet size;
-- normalize head and clipboard registration;
-- confirm that the final pose loops naturally to frame 1.
+- confirm the clipboard stays attached and does not cover the face after crop normalization;
+- confirm the blank clipboard contains no readable text or iconography;
+- confirm frames 6–8 create a smooth resolution and loop closure.
 
-Disposition: **candidate accepted for extraction and motion preview; not yet final-approved**.
+## 3. Updated asset policy
 
-## 3. Visual rebaseline gate
+### 3.1 Allowed to commit
 
-Before generating `running-right`, `running-left`, `running`, `jumping`, `failed` or `waiting`:
+The following **may and should be committed** to the planning branch for provenance, collaboration and handoff clarity:
 
-1. extract all 24 poses from the three candidate sheets;
-2. remove the purple background and create true alpha;
-3. normalize each frame to `192x208` without distorting body proportions;
-4. align body center and feet baseline;
-5. produce transparent `idle`, `waving` and `review` rows;
-6. produce loop previews for all three rows;
-7. produce one three-row contact sheet;
-8. present the contact sheet and previews to the user;
-9. obtain explicit approval that the new family replaces the old canonical visual base.
+- the three newly generated candidate sheets for `idle`, `waving` and `review`;
+- future generated row sheets for other runtime states;
+- extracted frame PNGs used for QA;
+- derived review contact sheets or preview assets stored under `workfiles/`.
 
-Until step 9 is complete, status remains `visual-rebaseline-candidate`.
+These are generated production workfiles, not private user photographs.
 
-After approval:
-
-- select a clean neutral frame from the new family, preferably idle frame 1 or frame 8;
-- promote it as the new canonical production base;
-- update `canonical-base.webp`, `canonical-base-qa.md` and `handoff-state.json`;
-- do not mix pixels, scale references or face geometry from the old base into subsequent rows.
-
-## 4. Deterministic extraction and transparency process
-
-Each uploaded sheet is `1448x1086`, PNG, RGBA container with alpha fixed at 255. The purple background is therefore visible opaque RGB, not transparency.
-
-For each sheet:
-
-1. define four equal logical columns and two logical rows;
-2. detect each character silhouette within its logical slot;
-3. crop with safety margin around ears, hat, paws, skirt, feet and tail;
-4. remove the purple background using a color-distance mask rather than one exact RGB value;
-5. preserve pink fur and red/pink costume pixels by combining color distance with edge-connected background detection;
-6. refine partially transparent edge pixels to avoid purple fringe;
-7. clear hidden RGB for pixels whose alpha becomes zero;
-8. fit the silhouette into a `192x208` cell with a shared scale target;
-9. align the feet baseline consistently within the action row;
-10. visually inspect on checkerboard, dark and light backgrounds.
-
-Reject any extracted frame with:
-
-- purple, white or dark fringe;
-- transparent holes in fur, clothing, eyes or clipboard;
-- cropped ears, hat, feet or tail;
-- detached tail, paw or clipboard pieces;
-- scale drift or baseline jump that cannot be corrected by translation alone.
-
-## 5. Motion preview acceptance criteria
-
-### Idle
-
-- no walking, waving or prop use;
-- blink remains smooth rather than abrupt;
-- at least one visible non-blink micro-motion exists;
-- frame 8 returns naturally to frame 1;
-- tail remains calm and attached.
-
-### Waving
-
-- the same paw performs the entire gesture;
-- frames 3 to 6 visibly alternate the wave direction;
-- the paw does not cover the face;
-- no extra limbs or human fingers appear;
-- frame 8 returns cleanly to frame 1.
-
-### Review
-
-- the clipboard stays attached and blank;
-- the sequence reads as one continuous review workflow;
-- eyes and free paw track the clipboard appropriately;
-- the thinking and satisfied states are distinguishable at pet size;
-- frame 8 closes naturally to frame 1.
-
-## 6. Remaining standard rows after approval
-
-Generate and review one row at a time in this order:
-
-1. `running-right`;
-2. `running-left`;
-3. `running`;
-4. `jumping`;
-5. `failed`;
-6. `waiting`.
-
-Every generation must use the new approved canonical base plus the approved three-row contact sheet as identity references.
-
-Do not use the old canonical base after rebaseline approval.
-
-For `running-left`, do not blindly mirror `running-right`; the hat flower is asymmetric and must remain on the canonical character side.
-
-## 7. Direction production
-
-After all nine standard rows are approved:
-
-1. generate `000°`, `090°`, `180°`, `270°` anchors;
-2. obtain user approval for the four anchors;
-3. generate all sixteen clockwise directions;
-4. verify hat, ears, face visibility, skirt and tail rotate together;
-5. verify `337.5° -> 000°` closure.
-
-## 8. Final assembly and publication
-
-The final atlas remains:
+Recommended location:
 
 ```text
-1536 x 2288
-8 columns x 11 rows
-192 x 208 per cell
-88 cells total
-spriteVersionNumber: 2
+workfiles/linabell--elio-zwd/assets/generated-candidates/
 ```
 
-The final clean branch must still be created from the latest `main`:
+### 3.2 Still forbidden to commit
 
-```text
-feat/add-linabell-pet-v2
-```
+The following remain forbidden in the public repository:
 
-The final pet directory must contain exactly:
+- the user’s private original photographic reference images;
+- cropped or traced derivatives of those photographs presented as final art;
+- any asset that republishes private source photos directly.
+
+### 3.3 Final PR policy unchanged
+
+Even though generated candidate sheets are allowed in the planning branch, they still must **not** be included in the final clean submission PR.
+
+The final submission branch and final contributor PR must still contain only:
 
 ```text
 pets/linabell--elio-zwd/submission.json
@@ -221,21 +123,20 @@ pets/linabell--elio-zwd/pet.json
 pets/linabell--elio-zwd/spritesheet.webp
 ```
 
-Before opening a ready-for-review PR, actually run:
+## 4. Immediate next steps
 
-```bash
-npm run validate:pr
-npm run lint
-npm run install:pet -- linabell--elio-zwd --codex-home /tmp/codex-pet-test
-```
+1. Save the three current candidate sheets into the planning branch under `workfiles/linabell--elio-zwd/assets/generated-candidates/`.
+2. Record their role and provenance.
+3. Split each `2x4` sheet into ordered frames 1–8.
+4. Remove the solid purple background and normalize all cells to `192x208`.
+5. Produce idle / waving / review preview loops.
+6. Ask the user whether this new three-sheet family should replace the old canonical production base.
 
-Do not automatically merge the PR.
+## 5. Decision gate
 
-## 9. Approval gates
+The next approval gate is now explicitly:
 
-Execution must stop for explicit user approval at:
+- **Approve new visual baseline**; or
+- **Reject new visual baseline and revert to old base**.
 
-1. new three-row visual rebaseline contact sheet and previews;
-2. four cardinal direction anchors;
-3. final 88-cell contact sheet and required motion previews;
-4. final PR readiness if any visual or validation concern remains.
+Only after that decision should the remaining six standard animation rows be produced.
