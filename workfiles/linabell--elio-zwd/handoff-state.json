@@ -4,104 +4,66 @@
   "planning_branch": "feat/linabell-pet-direction-a",
   "recommended_final_branch": "feat/add-linabell-pet-v2",
   "pet_id": "linabell--elio-zwd",
-  "status": "visual-rebaseline-preview-ready",
+  "status": "visual-rebaseline-image1-review-preview-ready",
   "completed": [
     "repository permission confirmed",
     "planning branch created",
-    "three private reference images reviewed without committing them",
-    "character definition locked",
-    "pink spring outfit selected",
-    "blue sailor outfit deferred",
-    "v2 88-cell action map documented",
-    "metadata drafts created",
-    "initial duplicate search completed",
-    "first independently generated full-body canonical base created and approved",
-    "first canonical base production copy committed to planning branch",
-    "new coherent 2x4 idle candidate received",
-    "new coherent 2x4 waving candidate received",
-    "new coherent 2x4 review candidate received",
-    "visual rebaseline plan committed and updated to allow generated workfiles",
-    "visual rebaseline task checklist committed and updated",
-    "compact generated idle waving and review row previews committed to planning branch",
-    "24 candidate frames extracted in top-row then bottom-row order",
-    "first-pass purple background removal and edge despill completed",
-    "24 transparent 192x208 QA cells exported",
-    "three transparent 1536x208 rows assembled",
-    "idle waving and review GIF previews produced",
-    "checkerboard light and dark three-row contact sheets produced",
-    "no exact duplicate frames detected"
+    "private photographic references reviewed without committing them",
+    "character definition and pink spring outfit locked",
+    "Codex Pet v2 88-cell map and metadata drafts documented",
+    "generated workfiles allowed in planning branch while final PR stays three-file-only",
+    "idle row extracted, cleaned, normalized and previewed",
+    "waving row extracted, cleaned, normalized and previewed",
+    "initial review row processed",
+    "user identified a third-paw anatomy defect in initial review frame 4",
+    "initial defective review row rejected",
+    "user selected image 1 as the replacement review source",
+    "image 1 third row extracted into eight review frames",
+    "dark background removed from image 1 review frames",
+    "image 1 review frames normalized to transparent 192x208 cells",
+    "updated review GIF and three-row contact sheets generated",
+    "no visible third paw in the image 1 replacement review row",
+    "image 1 selection and processing notes committed to planning branch"
   ],
   "asset_policy": {
     "generated_workfiles": "AI-generated candidate sheets, derived frame assets and QA previews may be committed under planning workfiles for provenance and handoff.",
     "private_photographic_references": "Private original photographs and direct traced or cropped derivatives must never be committed to the public repository.",
     "final_pr_scope": "The clean final submission PR remains limited to submission.json, pet.json and spritesheet.webp."
   },
-  "canonical_base_policy": "The previously approved canonical base remains official until the user explicitly approves the cleaned new idle, waving and review family. Do not mix the old and new baselines. After approval, promote a neutral frame from the new family as the production grounding reference for all remaining rows.",
-  "canonical_base": {
-    "path": "workfiles/linabell--elio-zwd/assets/canonical-base.webp",
-    "format": "webp",
-    "repository_copy_dimensions": "256x341",
-    "source_generation_dimensions": "1086x1448",
-    "approved_at": "2026-07-23",
-    "current_role": "official until the visual rebaseline gate is explicitly approved",
-    "reference_policy": "independently generated fan art; private photographic references are not committed"
-  },
+  "canonical_base_policy": "The original canonical base remains official until the user explicitly approves the updated identity family. After approval, use the approved idle/waving family plus image 1 Review as the sole production grounding style and do not mix the old visual baseline into later rows.",
   "visual_rebaseline": {
-    "received_at": "2026-07-28",
-    "status": "cleaned-previews-ready-for-user-approval",
-    "source_layout": "2x4 per action sheet",
-    "source_dimensions": "1448x1086 per PNG",
-    "source_alpha": "RGBA container with fully opaque alpha; purple background removed during first-pass processing",
-    "frame_order": "top row frames 1-4, bottom row frames 5-8",
+    "status": "updated-previews-ready-for-user-approval",
     "normalized_cell_dimensions": "192x208",
     "normalized_row_dimensions": "1536x208",
-    "tracked_generated_assets": [
-      "workfiles/linabell--elio-zwd/assets/generated-candidates/README.md",
-      "workfiles/linabell--elio-zwd/assets/generated-candidates/idle-row-preview.webp",
-      "workfiles/linabell--elio-zwd/assets/generated-candidates/waving-row-preview.webp",
-      "workfiles/linabell--elio-zwd/assets/generated-candidates/review-row-preview.webp"
-    ],
-    "local_qa_assets": [
-      "/mnt/data/linabell_rebaseline/identity-contact-sheet.png",
-      "/mnt/data/linabell_rebaseline/identity-contact-light.png",
-      "/mnt/data/linabell_rebaseline/identity-contact-dark.png",
-      "/mnt/data/linabell_rebaseline/idle-preview.gif",
-      "/mnt/data/linabell_rebaseline/waving-preview.gif",
-      "/mnt/data/linabell_rebaseline/review-preview.gif"
-    ],
-    "candidate_rows": {
-      "idle": {
-        "assessment": "cleaned and normalized; ready for user motion judgment",
-        "strengths": [
-          "stable identity and costume",
-          "ordered blink sequence",
-          "stable tail side and baseline",
-          "no exact duplicate frames"
-        ],
-        "remaining_gate": "user must decide whether the intentionally subtle motion is sufficient"
-      },
-      "waving": {
-        "assessment": "cleaned and normalized; strongest current identity-validation row",
-        "strengths": [
-          "same paw used throughout",
-          "clear raise-wave-lower sequence",
-          "no motion lines",
-          "close frame-8-to-frame-1 return"
-        ]
-      },
-      "review": {
-        "assessment": "cleaned and normalized; ready for user approval",
-        "strengths": [
-          "clipboard present and attached in every frame",
-          "continuous inspect-think-notice-confirm workflow",
-          "no readable clipboard text",
-          "identity consistent with idle and waving"
-        ]
-      }
+    "idle": {
+      "status": "unchanged and awaiting joint visual approval",
+      "source": "previous approved cleaned idle row"
     },
-    "plan_path": "workfiles/linabell--elio-zwd/direction-b-visual-rebaseline-plan.md",
-    "tasks_path": "workfiles/linabell--elio-zwd/direction-b-visual-rebaseline-tasks.md",
-    "approval_gate": "show the cleaned three-row contact sheet and GIF previews, then obtain explicit user approval that this family replaces the old canonical visual base"
+    "waving": {
+      "status": "unchanged and awaiting joint visual approval",
+      "source": "previous approved cleaned waving row"
+    },
+    "review": {
+      "status": "replaced with image 1 third row and awaiting approval",
+      "rejected_source_issue": "initial processed review frame 4 contained a third paw",
+      "selected_source": "image 1",
+      "selected_scope": "third row only, eight frames left to right",
+      "anatomy_check": "one clipboard-holding paw and at most one free paw per frame; no visible third paw",
+      "clipboard_check": "clipboard remains present with no readable text",
+      "local_assets": [
+        "/mnt/data/linabell_image1_final/review-row-image1.png",
+        "/mnt/data/linabell_image1_final/review-preview-image1.gif",
+        "/mnt/data/linabell_image1_final/identity-contact-sheet-image1.png",
+        "/mnt/data/linabell_image1_final/identity-contact-light-image1.png",
+        "/mnt/data/linabell_image1_final/identity-contact-dark-image1.png",
+        "/mnt/data/linabell_image1_final/processing-report-image1.json"
+      ],
+      "planning_notes": [
+        "workfiles/linabell--elio-zwd/assets/generated-candidates/review-image1-selection.md",
+        "workfiles/linabell--elio-zwd/assets/generated-candidates/image1-review-processing-note.md"
+      ]
+    },
+    "approval_gate": "Show the updated three-row contact sheet and image 1 Review GIF. Obtain explicit approval before starting running-right."
   },
   "runtime": {
     "version": 2,
@@ -126,15 +88,15 @@
     "look-000-to-157.5",
     "look-180-to-337.5"
   ],
-  "next_action": "Stop at the visual gate and show the cleaned contact sheet plus idle, waving and review previews. After explicit approval, promote the new visual baseline and begin running-right. If corrections are requested, repair only the smallest failing row or frames.",
+  "next_action": "Stop at the updated identity visual gate. If the user approves image 1 Review together with the unchanged Idle and Waving rows, promote the new visual baseline and begin running-right. If rejected, repair only Review.",
   "must_not_do": [
     "do not modify main",
-    "do not mix the old and new visual baselines",
-    "do not generate the remaining six standard rows before visual rebaseline approval",
+    "do not reuse the rejected third-paw review row",
+    "do not mix old and new visual baselines after approval",
+    "do not generate remaining rows before identity approval",
     "do not mix the blue sailor outfit into the main atlas",
-    "do not upload or commit the private photographic references",
-    "do not create a final PR before user visual approval and validation",
-    "do not merge planning workfiles into the final submission PR",
+    "do not upload or commit private photographic references",
+    "do not create or merge the final PR before visual approval and validation",
     "do not claim tests passed without running them"
   ],
   "final_package": [
