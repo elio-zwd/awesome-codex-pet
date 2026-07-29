@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "directions": [
+    {"direction":"000","verdict":"pass","expected":"up","observed":"抬头、瞳孔上移、下颌更可见。","reason":"直向上语义清楚。"},
+    {"direction":"022.5","verdict":"pass","expected":"up-right","observed":"上抬并开始朝屏幕右侧偏转。","reason":"与 000 和 045 连续。"},
+    {"direction":"045","verdict":"pass","expected":"up-right","observed":"脸部与鼻尖明显指向右上。","reason":"右向辨识清楚。"},
+    {"direction":"067.5","verdict":"pass","expected":"up-right","observed":"维持右向，仰角收小。","reason":"与相邻格的可见差异足以支撑连续转向。"},
+    {"direction":"090","verdict":"pass","expected":"right","observed":"鼻尖、脸面与视线朝屏幕右侧。","reason":"右向锚点清楚。"},
+    {"direction":"112.5","verdict":"pass","expected":"down-right","observed":"右向并开始低头。","reason":"下倾变化可读。"},
+    {"direction":"135","verdict":"pass","expected":"down-right","observed":"右下侧脸，帽檐压低。","reason":"人工复检透明区域警告；未见破洞或接缝。"},
+    {"direction":"157.5","verdict":"pass","expected":"down-right","observed":"继续朝右下过渡。","reason":"人工复检透明区域警告；未见破洞或接缝。"},
+    {"direction":"180","verdict":"pass","expected":"down","observed":"低头、帽檐遮住更多眼部。","reason":"下向锚点清楚；人工复检未见破洞或接缝。"},
+    {"direction":"202.5","verdict":"pass","expected":"down-left","observed":"低头并开始朝屏幕左侧偏转。","reason":"与 180 和 225 连续。"},
+    {"direction":"225","verdict":"pass","expected":"down-left","observed":"清楚的左下视线，帽檐略压低。","reason":"重做后经盲测确认。"},
+    {"direction":"247.5","verdict":"pass","expected":"down-left","observed":"较浅的左下视线，低头程度小于 225°。","reason":"重做后经盲测确认。"},
+    {"direction":"270","verdict":"pass","expected":"left","observed":"水平左侧脸与平视眼线。","reason":"左向锚点清楚，重做后经盲测确认。"},
+    {"direction":"292.5","verdict":"pass","expected":"up-left","observed":"左侧脸并轻微抬颏、上看。","reason":"重做后经盲测确认。"},
+    {"direction":"315","verdict":"pass","expected":"up-left","observed":"脸部与鼻尖朝左上。","reason":"左上向辨识清楚。"},
+    {"direction":"337.5","verdict":"pass","expected":"up-left","observed":"左上过渡后接回 000。","reason":"闭环复检通过，未见可见跳变。"}
+  ]
+}

@@ -447,7 +447,7 @@
     {
       "id": "look-cardinals",
       "kind": "look-cardinal-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/look-cardinals.md",
       "repair_prompt_files": {
         "000": "prompts/look-anchor-repairs/000.md",
@@ -520,12 +520,14 @@
       "derivation_policy": {
         "may_derive": false,
         "reason": "cardinal directions require grounded pet-specific generation"
-      }
+      },
+      "source_path": "C:\\Users\\70455\\.codex\\generated_images\\019fad00-4987-78b0-b000-8ec729e32924\\exec-5649d90a-01d9-4d32-9b49-9fc597c3dd49.png",
+      "completed_at": "2026-07-29T09:00:48.9319659Z"
     },
     {
       "id": "look-row-9",
       "kind": "look-row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/look-row-9.md",
       "retry_prompt_file": "prompts/row-retries/look-row-9.md",
       "input_images": [
@@ -580,12 +582,14 @@
       },
       "coherent_synthesis_required": true,
       "individual_cell_packaging_allowed": false,
-      "packaging_eligible": true
+      "packaging_eligible": true,
+      "source_path": "C:\\Users\\70455\\.codex\\generated_images\\019fad18-692a-7fb3-8790-8058205f7319\\exec-76a0ca26-d371-4e31-89f6-721578b83981.png",
+      "completed_at": "2026-07-29T11:32:19.2718454Z"
     },
     {
       "id": "look-row-10",
       "kind": "look-row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/look-row-10.md",
       "retry_prompt_file": "prompts/row-retries/look-row-10.md",
       "input_images": [
@@ -646,7 +650,12 @@
       },
       "coherent_synthesis_required": true,
       "individual_cell_packaging_allowed": false,
-      "packaging_eligible": true
+      "packaging_eligible": true,
+      "source_path": "C:\\Users\\70455\\.codex\\generated_images\\019fada7-c09c-7ce2-9315-9143489175f7\\exec-b5cc193b-6bca-4b39-b375-df68247f19dc.png",
+      "completed_at": "2026-07-29T11:37:16.5661880Z",
+      "repair_source": "coherent-left-direction-quartet",
+      "repair_output_path": "decoded/look-row-10-left-quartet-repair.png",
+      "final_direction_source": "final/spritesheet-extended-final.webp"
     }
   ]
 }

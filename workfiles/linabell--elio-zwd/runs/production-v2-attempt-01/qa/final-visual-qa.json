@@ -1,0 +1,15 @@
+{
+  "visual_qa": "pass",
+  "qa_status": "pass",
+  "reviewer": "independent-final-visual-qa",
+  "regression_flags": [],
+  "notes": "最终联系表与预览保持统一外观、完整轮廓和稳定脚部基线；帽子、尾巴及肢体连接正常，无可见裁切或透明边缘异常。九个动作可读，16 方向从上→右→下→左连续推进，四个基准方向清晰；盲测与最终结构验证均为通过且无警告。",
+  "recommended_next_action": "可进入打包或本地安装决策。",
+  "artifacts": [
+    "qa/contact-sheet-extended-final.png",
+    "qa/look-directions-final.png",
+    "qa/previews-final",
+    "qa/direction-blind-validation-r6.json",
+    "final/validation-extended-final.json"
+  ]
+}

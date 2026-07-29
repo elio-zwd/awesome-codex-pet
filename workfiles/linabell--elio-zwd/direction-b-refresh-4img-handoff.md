@@ -8,7 +8,7 @@
 
 ## 当前状态
 
-`refresh-3img-baseline-adopted-standard-rows-qa-awaiting-user-review`
+`refresh-3img-baseline-adopted-v2-final-candidate-validated-awaiting-packaging-decision`
 
 已完成：在 refresh planning / production 分支创建本轮 plan、tasks、handoff 文档；接收并完成 idle / waving / review 三个候选图的 intake 与视觉 QA，结果记录于 `direction-b-refresh-3img-intake-and-qa.md`。用户已取消第 4 张输入，且已采用这三图定义的身份家族为新的 production baseline。
 
@@ -16,9 +16,11 @@
 
 R5 已完成：running-right、完整独立生成的 running-left、jumping、failed、waiting、non-directional running 均通过增量及汇总结构检查。初始逐帧镜像的 running-left 因深色 QA 联系表中的尾尖分离碎片被拒绝，后续独立生成行替代该候选。running 的初始两次生成均被安全系统拒绝；用户授权无名称、原地专注处理策略后，成功生成并通过 6 帧候选。详情见 `direction-b-refresh-r5-standard-rows-attempt-01-qa.md`。
 
+R6、R7 已完成：已建立 000°、090°、180°、270° 四方向锚点及 16 格环视。左侧中间的四格（225°–292.5°）经一次完整重做，使下左、左、上左语义在三人盲测中全部通过。最终候选图集已完成透明边缘去紫、WEBP 编码与 v2 结构验证；最终视觉 QA 无回归标记。记录见 `direction-b-refresh-r6-directions-and-r7-final-qa.md`。
+
 ## 下一步
 
-下一步：请用户审看 `runs/production-v2-attempt-01/qa/contact-sheet-standard.png` 及需要的循环预览。确认后继续 R6 四方向锚点与十六方向环视；本分支仍不创建最终 PR。
+下一步：由用户决定是否进入 clean PR 三件套打包或仅作本地 Codex 桌宠安装。最终预览为 `runs/production-v2-attempt-01/qa/contact-sheet-extended-final.png` 和 `qa/look-directions-final.png`；本分支仍不创建最终 PR。
 
 ## 重要边界
 
