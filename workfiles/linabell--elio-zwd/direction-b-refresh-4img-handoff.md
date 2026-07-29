@@ -8,15 +8,15 @@
 
 ## 当前状态
 
-`refresh-4img-three-image-qa-complete-fourth-pending-running-right-prompt-repair-drafted`
+`refresh-3img-baseline-adopted-running-right-attempt-01-rejected-motion-anchor-pending`
 
-已完成：在 refresh planning / production 分支创建本轮 plan、tasks、handoff 文档；接收并完成 idle / waving / review 三个候选图的阶段性 intake 与视觉 QA，结果记录于 `direction-b-refresh-3img-intake-and-qa.md`。
+已完成：在 refresh planning / production 分支创建本轮 plan、tasks、handoff 文档；接收并完成 idle / waving / review 三个候选图的 intake 与视觉 QA，结果记录于 `direction-b-refresh-3img-intake-and-qa.md`。用户已取消第 4 张输入，且已采用这三图定义的身份家族为新的 production baseline。
 
-未完成：第 4 张新图尚未提供，完整四图 intake、四图视觉 QA 与最终 adopt / reject 决策均未完成。前三图的 review 候选有新增剪贴板，若采用新身份家族，review 必须无道具重做。另有一个 running-right 本地候选因重复跨步、未呈现对侧四肢交替且出现下蹲而判定不合格；待用户确认修复 prompt 后才可重新生成。
+未完成：新基线的 identity rows 尚未统一为透明生产行，review 必须无道具重做。旧 running-right 候选与本地重新生成的候选 01 均不合格：候选 01 虽改善下蹲，却仍未呈现可辨认的对侧四肢交替。候选 01 的 QA 详见 `direction-b-refresh-running-right-local-attempt-01-qa.md`。
 
 ## 下一步
 
-接收第 4 张图，完成四图视觉基线评估；用户确认后，使用 `direction-b-refresh-running-right-prompt-repair.md` 中的修复 prompt 重新生成 running-right 候选。评估完成后：
+先准备非运行时的 8 格步态姿势锚点，作为生成 `running-right` 的 motion/layout reference；再结合三张已采用的本地身份参考图，重新生成完整候选并执行逐帧动作 QA。候选 01 不进入拆帧或生产素材。之后：
 
 - 若 adopt：将其标为新的 production baseline，核对旧 idle / waving / review 是否仍一致；不一致则重做，并在用户批准三行 identity QA 后继续其余动作。
 - 若 reject：记录具体原因，明确继续沿用此前 baseline，并从 running-right 继续推进。

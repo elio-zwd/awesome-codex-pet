@@ -18,7 +18,7 @@
 
 ## 当前决策门
 
-已收到并完成前三张（idle / waving / review）的阶段性 intake 与视觉 QA，详见 `direction-b-refresh-3img-intake-and-qa.md`。三图显示出一致的新身份家族，但第 4 张仍未收到；因此不预设最终 adopt 或 reject，也不宣称已完成四图视觉 QA。review 候选另含基础身份中不存在的剪贴板，若最终采用新家族，该行须以无新增道具的专注姿态重做。
+用户已明确取消第 4 张输入。前三张（idle / waving / review）的 intake 与视觉 QA 现构成本轮完整评估范围，详见 `direction-b-refresh-3img-intake-and-qa.md`。结论为 **adopt**：采用这三图定义的粉色毛绒 LinaBell 身份家族作为新的 production baseline。review 候选另含基础身份中不存在的剪贴板，故该行在最终 production row 中仍须以无新增道具的专注姿态重做。
 
 ## 技术目标
 
