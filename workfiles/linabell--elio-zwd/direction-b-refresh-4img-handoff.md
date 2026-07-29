@@ -8,7 +8,7 @@
 
 ## 当前状态
 
-`refresh-3img-baseline-adopted-running-right-attempt-03-awaiting-user-approval`
+`refresh-3img-baseline-adopted-running-right-row-qa-complete`
 
 已完成：在 refresh planning / production 分支创建本轮 plan、tasks、handoff 文档；接收并完成 idle / waving / review 三个候选图的 intake 与视觉 QA，结果记录于 `direction-b-refresh-3img-intake-and-qa.md`。用户已取消第 4 张输入，且已采用这三图定义的身份家族为新的 production baseline。
 
@@ -16,7 +16,7 @@
 
 ## 下一步
 
-用户已选择调整为 screen-space 交替验收。候选 03 已生成并阶段性通过身份、右向、无下蹲及屏幕前/后摆动检查，等待用户视觉批准；批准后才拆帧、透明化和制作行级 QA 预览。此前候选及锚点仍不进入生产素材。之后：
+用户已选择 screen-space 交替验收并批准候选 03。该行已完成透明拆帧、`192 × 208` 注册、`1536 × 208` 单行组装和深色 QA 联系表/循环预览；结构检查零错误、零警告。此前候选及锚点仍不进入生产素材。之后：
 
 - 若 adopt：将其标为新的 production baseline，核对旧 idle / waving / review 是否仍一致；不一致则重做，并在用户批准三行 identity QA 后继续其余动作。
 - 若 reject：记录具体原因，明确继续沿用此前 baseline，并从 running-right 继续推进。

@@ -12,7 +12,7 @@
 
 ## QA 结果
 
-**阶段性通过，等待用户视觉批准。**
+**通过：用户已批准候选 03 的 screen-space 跑步节奏。**
 
 | 项目 | 结论 | 说明 |
 | --- | --- | --- |
@@ -20,10 +20,21 @@
 | 右向与无下蹲 | 通过 | 全部帧朝 screen-right，躯干直立；未见蹲伏、坐姿、跳跃或蓝色水手服。 |
 | screen-space 腿部节奏 | 通过 | 序列中存在长跨步、收脚/ passing、抬膝过渡和回到接触前姿的可读变化。 |
 | screen-space 前爪节奏 | 通过 | 前爪在前伸、收回和靠近躯干之间变化，未保持单一固定拳姿。 |
-| 帧多样性与循环 | 需用户确认 | 若干长跨步帧仍相近；在最终拆帧预览前，应由用户确认这种较温和的节奏是否足够。 |
-| 生产几何 | 未开始 | 未经视觉批准，不进行透明化、`192 × 208` 注册、`1536 × 208` 行组装或 atlas 验证。 |
+| 帧多样性与循环 | 已批准 | 若干长跨步帧仍相近；用户已按 screen-space 验收口径批准其整体节奏。 |
+| 生产几何 | 通过 | 8 帧均以 connected-components 方式提取为透明 `192 × 208` PNG；`inspect_frames.py --require-components` 返回零错误、零警告。 |
+
+## 本地行级产物
+
+| 产物 | 路径 | 状态 |
+| --- | --- | --- |
+| 透明单帧 | `runs/running-right-attempt-03/frames/running-right/00.png` 至 `07.png` | 8 帧均为 `192 × 208`。 |
+| 透明单行 | `runs/running-right-attempt-03/row/running-right.png` | `1536 × 208`，按 00–07 从左至右排列。 |
+| 深色 QA 联系表 | `runs/running-right-attempt-03/qa/running-right-contact-sheet-dark.png` | 仅供透明边缘与帧间对照。 |
+| 深色循环预览 | `runs/running-right-attempt-03/qa/running-right-preview-dark.gif` | 仅供动作 QA。 |
+| 结构检查 | `runs/running-right-attempt-03/qa/review.json` | 零错误、零警告。 |
+
+原始 2×4 AI 候选被无损重排为横向 8 帧条带后才输入标准提取脚本；此步骤不改变角色像素或生成新角色内容。该行仍是 planning 分支中的待审 production candidate，尚未写入最终图集。
 
 ## 下一步
 
-请用户确认是否接受候选 03 的 screen-space 跑步节奏。接受后，才可进行本地拆帧、透明化、行级 QA 联系表/预览，并将其作为待审 production `running-right` 行；若不接受，则只修复该完整候选行。
-
+已完成用户批准、透明拆帧和行级 QA。下一步应先完成 identity-row reconciliation（尤其无新增道具的 review），再继续其余 standard rows；本行在最终 8×11 assembly 前仍须与完整标准行集一起复检。

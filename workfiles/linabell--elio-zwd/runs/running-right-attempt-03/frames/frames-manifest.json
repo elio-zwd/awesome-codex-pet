@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#6A00FF",
+    "rgb": [
+      106,
+      0,
+      255
+    ],
+    "threshold": 96.0
+  },
+  "rows": [
+    {
+      "state": "running-right",
+      "frames": [
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\running-right-attempt-03\\frames\\running-right\\00.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\running-right-attempt-03\\frames\\running-right\\01.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\running-right-attempt-03\\frames\\running-right\\02.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\running-right-attempt-03\\frames\\running-right\\03.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\running-right-attempt-03\\frames\\running-right\\04.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\running-right-attempt-03\\frames\\running-right\\05.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\running-right-attempt-03\\frames\\running-right\\06.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\running-right-attempt-03\\frames\\running-right\\07.png"
+      ],
+      "method": "components"
+    }
+  ]
+}
