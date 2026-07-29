@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#6A00FF",
+    "rgb": [
+      106,
+      0,
+      255
+    ],
+    "threshold": 96.0
+  },
+  "rows": [
+    {
+      "state": "failed",
+      "frames": [
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\qa\\rows\\failed\\frames\\failed\\00.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\qa\\rows\\failed\\frames\\failed\\01.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\qa\\rows\\failed\\frames\\failed\\02.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\qa\\rows\\failed\\frames\\failed\\03.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\qa\\rows\\failed\\frames\\failed\\04.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\qa\\rows\\failed\\frames\\failed\\05.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\qa\\rows\\failed\\frames\\failed\\06.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\qa\\rows\\failed\\frames\\failed\\07.png"
+      ],
+      "method": "components"
+    }
+  ]
+}

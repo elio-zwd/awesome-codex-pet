@@ -8,17 +8,17 @@
 
 ## 当前状态
 
-`refresh-3img-baseline-adopted-identity-rows-qa-awaiting-user-approval`
+`refresh-3img-baseline-adopted-r5-running-generation-blocked`
 
 已完成：在 refresh planning / production 分支创建本轮 plan、tasks、handoff 文档；接收并完成 idle / waving / review 三个候选图的 intake 与视觉 QA，结果记录于 `direction-b-refresh-3img-intake-and-qa.md`。用户已取消第 4 张输入，且已采用这三图定义的身份家族为新的 production baseline。
 
-已完成但待批准：identity-row 候选 01 已将 idle（6 帧）、waving（4 帧）及新生成的无道具 review（6 帧）透明化、注册并组装为 `1536 × 208` 单行。三行均通过结构检查（零错误）；未用格均为完全透明。`stable-slots` 策略留下的三条预期提示需要结合循环预览完成最终视觉确认。详细记录见 `direction-b-refresh-identity-rows-attempt-01-qa.md`。
+已完成：用户以“继续下一步”确认 identity rows。idle（6 帧）、waving（4 帧）及无道具 review（6 帧）已透明化、注册并组装为 `1536 × 208` 单行；三行均通过结构检查，未用格均为完全透明。详细记录见 `direction-b-refresh-identity-rows-attempt-01-qa.md`。
+
+R5 进展：running-right、完整独立生成的 running-left、jumping、failed、waiting 已通过增量结构检查。初始逐帧镜像的 running-left 因深色 QA 联系表中的尾尖分离碎片被拒绝，后续独立生成行替代该候选。non-directional running 连续两次被内置生成的安全系统拒绝，均未产生候选文件；不得用其他行替代。详情见 `direction-b-refresh-r5-standard-rows-attempt-01-qa.md`。
 
 ## 下一步
 
-用户已选择 screen-space 交替验收并批准 running-right 候选 03。该行已完成透明拆帧、`192 × 208` 注册、`1536 × 208` 单行组装和深色 QA 联系表/循环预览；结构检查零错误、零警告。此前候选及锚点仍不进入生产素材。
-
-下一步：请用户查看 `runs/identity-rows-attempt-01/qa/identity-rows-contact-sheet-dark.png` 及三个循环预览，并对 idle / waving / review 统一批准或提出修改。仅在这三行批准后，继续 R5 的 running-left、running、jumping、failed、waiting。
+下一步：等待用户对 non-directional running 的新候选路径给出方向（提供候选工作姿态，或明确授权新的简短语义策略）。只有取得该行的有效候选并完成 R5 后，才能继续 R6 四方向锚点与十六方向环视。
 
 ## 重要边界
 

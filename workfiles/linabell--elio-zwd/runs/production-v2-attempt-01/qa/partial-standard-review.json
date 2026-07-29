@@ -1,0 +1,871 @@
+{
+  "ok": true,
+  "frames_root": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames",
+  "states": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "review"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "idle",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\idle\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17692,
+          "bbox": [
+            32,
+            6,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 203
+        },
+        {
+          "index": 1,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\idle\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17648,
+          "bbox": [
+            32,
+            6,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 184
+        },
+        {
+          "index": 2,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\idle\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17677,
+          "bbox": [
+            32,
+            6,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 190
+        },
+        {
+          "index": 3,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\idle\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17574,
+          "bbox": [
+            32,
+            7,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 165
+        },
+        {
+          "index": 4,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\idle\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17898,
+          "bbox": [
+            32,
+            5,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 159
+        },
+        {
+          "index": 5,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\idle\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17923,
+          "bbox": [
+            32,
+            5,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 184
+        }
+      ]
+    },
+    {
+      "state": "running-right",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-right\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18623,
+          "bbox": [
+            12,
+            5,
+            180,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 251
+        },
+        {
+          "index": 1,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-right\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15299,
+          "bbox": [
+            27,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 186
+        },
+        {
+          "index": 2,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-right\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14960,
+          "bbox": [
+            29,
+            5,
+            163,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 184
+        },
+        {
+          "index": 3,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-right\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16458,
+          "bbox": [
+            16,
+            5,
+            175,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 202
+        },
+        {
+          "index": 4,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-right\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16629,
+          "bbox": [
+            16,
+            5,
+            176,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 194
+        },
+        {
+          "index": 5,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-right\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14721,
+          "bbox": [
+            27,
+            5,
+            164,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 173
+        },
+        {
+          "index": 6,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-right\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14843,
+          "bbox": [
+            27,
+            5,
+            164,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 186
+        },
+        {
+          "index": 7,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-right\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17274,
+          "bbox": [
+            11,
+            5,
+            180,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 247
+        }
+      ]
+    },
+    {
+      "state": "running-left",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-left\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18303,
+          "bbox": [
+            5,
+            7,
+            187,
+            201
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 371
+        },
+        {
+          "index": 1,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-left\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17971,
+          "bbox": [
+            11,
+            5,
+            180,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 377
+        },
+        {
+          "index": 2,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-left\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17824,
+          "bbox": [
+            9,
+            5,
+            183,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 374
+        },
+        {
+          "index": 3,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-left\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17095,
+          "bbox": [
+            14,
+            5,
+            178,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 401
+        },
+        {
+          "index": 4,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-left\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17018,
+          "bbox": [
+            14,
+            5,
+            177,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 355
+        },
+        {
+          "index": 5,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-left\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17599,
+          "bbox": [
+            9,
+            5,
+            182,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 361
+        },
+        {
+          "index": 6,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-left\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18185,
+          "bbox": [
+            14,
+            5,
+            177,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 381
+        },
+        {
+          "index": 7,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\running-left\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17371,
+          "bbox": [
+            14,
+            5,
+            177,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 345
+        }
+      ]
+    },
+    {
+      "state": "waving",
+      "expected_frames": 4,
+      "actual_frames": 4,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\waving\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17527,
+          "bbox": [
+            32,
+            6,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 240
+        },
+        {
+          "index": 1,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\waving\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17568,
+          "bbox": [
+            32,
+            6,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 238
+        },
+        {
+          "index": 2,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\waving\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18152,
+          "bbox": [
+            32,
+            5,
+            159,
+            202
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 258
+        },
+        {
+          "index": 3,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\waving\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17555,
+          "bbox": [
+            32,
+            5,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 262
+        }
+      ]
+    },
+    {
+      "state": "jumping",
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\jumping\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20128,
+          "bbox": [
+            21,
+            5,
+            170,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 288
+        },
+        {
+          "index": 1,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\jumping\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18333,
+          "bbox": [
+            32,
+            5,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 244
+        },
+        {
+          "index": 2,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\jumping\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19394,
+          "bbox": [
+            26,
+            5,
+            166,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 287
+        },
+        {
+          "index": 3,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\jumping\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16932,
+          "bbox": [
+            35,
+            5,
+            157,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 222
+        },
+        {
+          "index": 4,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\jumping\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20658,
+          "bbox": [
+            23,
+            5,
+            168,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 284
+        }
+      ]
+    },
+    {
+      "state": "failed",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\failed\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17311,
+          "bbox": [
+            38,
+            5,
+            153,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 278
+        },
+        {
+          "index": 1,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\failed\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18090,
+          "bbox": [
+            38,
+            5,
+            154,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 258
+        },
+        {
+          "index": 2,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\failed\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18855,
+          "bbox": [
+            35,
+            5,
+            157,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 241
+        },
+        {
+          "index": 3,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\failed\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 21475,
+          "bbox": [
+            28,
+            5,
+            164,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 299
+        },
+        {
+          "index": 4,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\failed\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 24493,
+          "bbox": [
+            19,
+            5,
+            173,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 338
+        },
+        {
+          "index": 5,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\failed\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 21604,
+          "bbox": [
+            26,
+            5,
+            165,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 315
+        },
+        {
+          "index": 6,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\failed\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19635,
+          "bbox": [
+            32,
+            5,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 283
+        },
+        {
+          "index": 7,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\failed\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17804,
+          "bbox": [
+            36,
+            5,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 287
+        }
+      ]
+    },
+    {
+      "state": "waiting",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\waiting\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18096,
+          "bbox": [
+            33,
+            5,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 211
+        },
+        {
+          "index": 1,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\waiting\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16863,
+          "bbox": [
+            29,
+            5,
+            163,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 172
+        },
+        {
+          "index": 2,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\waiting\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19099,
+          "bbox": [
+            24,
+            5,
+            168,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 261
+        },
+        {
+          "index": 3,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\waiting\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17588,
+          "bbox": [
+            34,
+            5,
+            158,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 217
+        },
+        {
+          "index": 4,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\waiting\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17552,
+          "bbox": [
+            23,
+            5,
+            168,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 201
+        },
+        {
+          "index": 5,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\waiting\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 18372,
+          "bbox": [
+            32,
+            5,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 222
+        }
+      ]
+    },
+    {
+      "state": "review",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\review\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16242,
+          "bbox": [
+            32,
+            11,
+            158,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 185
+        },
+        {
+          "index": 1,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\review\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15749,
+          "bbox": [
+            34,
+            7,
+            157,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 116
+        },
+        {
+          "index": 2,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\review\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16285,
+          "bbox": [
+            32,
+            9,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 183
+        },
+        {
+          "index": 3,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\review\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15738,
+          "bbox": [
+            28,
+            7,
+            163,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 170
+        },
+        {
+          "index": 4,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\review\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15831,
+          "bbox": [
+            34,
+            6,
+            157,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 182
+        },
+        {
+          "index": 5,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\frames\\review\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15395,
+          "bbox": [
+            28,
+            5,
+            163,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 157
+        }
+      ]
+    }
+  ]
+}

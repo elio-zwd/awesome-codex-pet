@@ -4,11 +4,11 @@
 - [x] R1 three-image intake（原 four-image intake）：用户取消第 4 张输入；已接收 idle / waving / review 三张并记录候选类别与参考使用边界。
 - [x] R2 three-image visual QA（原 four-image visual QA）：用户取消第 4 张输入；已完成完整范围内的身份特征、材质/渲染一致性及桌宠尺寸可读性 QA。
 - [x] R3 baseline decision：adopt 三图定义的新粉色毛绒 LinaBell 身份家族为 production baseline；review 的新增剪贴板不进入最终 production row。
-- [ ] R4 identity-row reconciliation：已形成候选 01：idle（6 帧）、waving（4 帧）、无道具 review（6 帧）均已透明化为 `192 × 208` 单帧和 `1536 × 208` 单行，并完成三行 QA 联系表/预览；等待用户统一视觉批准后才能完成。
-- [ ] R5 remaining standard rows：在 identity rows 获批后制作 running-right、running-left、running、jumping、failed、waiting。已诊断一个不合格的 running-right 本地候选并写出待确认修复 prompt；该候选未计为完成素材。
+- [x] R4 identity-row reconciliation：用户以“继续下一步”确认三行 identity QA；idle（6 帧）、waving（4 帧）、无道具 review（6 帧）已成为透明生产候选。
+- [ ] R5 remaining standard rows：running-right、独立生成的 running-left、jumping、failed、waiting 已通过增量结构检查；non-directional running 两次内置生成均未产生候选，等待用户确认新的候选路径。镜像版 running-left 因尾尖分离碎片已拒绝，不计入生产素材。
 - [ ] R6 directions：制作四方向锚点与十六方向环视。
 - [ ] R7 final assembly and validation：组装 v2 `1536 × 2288` 图集，执行验证，准备 clean PR 所需三件套；不在本分支创建最终 PR。
 
 ## 当前状态
 
-`R0` 至 `R3` 已完成。`R4` 的透明 production 候选与 QA 已完成，但尚待用户统一视觉批准；其中 review 已无道具重做。`R5` 中 running-right 已完成：用户批准候选 03，8 帧已透明化、注册为 `192 × 208` 并组装为 `1536 × 208` 行，行级检查零错误、零警告；其余 standard rows 尚未开始。`R6`、`R7` 未开始。
+`R0` 至 `R4` 已完成。`R5` 已完成 running-right、running-left、jumping、failed、waiting 的候选生产与增量 QA；running 行被安全系统拒绝且未产生候选，R5 因此仍未完成。`R6`、`R7` 未开始。
