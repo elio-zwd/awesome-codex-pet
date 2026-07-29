@@ -22,7 +22,7 @@
 
 R4 已形成透明 identity-row 候选 01：idle、waving 与无道具 review 的运行时行和 QA 预览已就绪，记录见 `direction-b-refresh-identity-rows-attempt-01-qa.md`。当前门禁为用户统一视觉批准；在批准前不继续其他标准动作行。
 
-用户已以“继续下一步”确认 identity-row 门禁，R5 已开始。running-left 的镜像尝试因尾尖碎片被视觉 QA 拒绝，已由独立生成的完整左向行替代；jumping、failed 与 waiting 也已通过增量结构检查。non-directional running 连续两次生成均未产出候选，当前需用户确认新的候选路径，详见 `direction-b-refresh-r5-standard-rows-attempt-01-qa.md`。
+用户已以“继续下一步”确认 identity-row 门禁，R5 已完成。running-left 的镜像尝试因尾尖碎片被视觉 QA 拒绝，已由独立生成的完整左向行替代；jumping、failed、waiting 与 non-directional running 均已通过增量结构检查。running 使用用户批准的无名称原地专注处理策略，详见 `direction-b-refresh-r5-standard-rows-attempt-01-qa.md`。当前门禁为用户审看标准 8 × 9 联系表后再进入 R6。
 
 ## 技术目标
 

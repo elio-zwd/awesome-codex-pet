@@ -361,7 +361,7 @@
     {
       "id": "running",
       "kind": "row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/running.md",
       "retry_prompt_file": "prompts/row-retries/running.md",
       "input_images": [
@@ -395,7 +395,10 @@
         "may_derive": false,
         "reason": "state requires its own generated animation semantics"
       },
-      "mirror_policy": {}
+      "mirror_policy": {},
+      "source_path": "C:\\Users\\70455\\.codex\\generated_images\\019faca5-5270-7280-b0e7-45b2cb16ed8c\\exec-69d08062-ecfd-41f4-95e1-dc572e6fd1df.png",
+      "completed_at": "2026-07-29T07:03:10.0909213Z",
+      "repair_strategy": "user-approved unnamed focused-processing prompt; no character, franchise, product, app, coding, or brand names"
     },
     {
       "id": "review",

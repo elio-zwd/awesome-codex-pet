@@ -5,10 +5,10 @@
 - [x] R2 three-image visual QA（原 four-image visual QA）：用户取消第 4 张输入；已完成完整范围内的身份特征、材质/渲染一致性及桌宠尺寸可读性 QA。
 - [x] R3 baseline decision：adopt 三图定义的新粉色毛绒 LinaBell 身份家族为 production baseline；review 的新增剪贴板不进入最终 production row。
 - [x] R4 identity-row reconciliation：用户以“继续下一步”确认三行 identity QA；idle（6 帧）、waving（4 帧）、无道具 review（6 帧）已成为透明生产候选。
-- [ ] R5 remaining standard rows：running-right、独立生成的 running-left、jumping、failed、waiting 已通过增量结构检查；non-directional running 两次内置生成均未产生候选，等待用户确认新的候选路径。镜像版 running-left 因尾尖分离碎片已拒绝，不计入生产素材。
+- [x] R5 remaining standard rows：running-right、独立生成的 running-left、jumping、failed、waiting、non-directional running 均已完成候选生产和增量结构检查。running 使用用户批准的无名称原地专注处理策略；镜像版 running-left 因尾尖分离碎片已拒绝，不计入生产素材。
 - [ ] R6 directions：制作四方向锚点与十六方向环视。
 - [ ] R7 final assembly and validation：组装 v2 `1536 × 2288` 图集，执行验证，准备 clean PR 所需三件套；不在本分支创建最终 PR。
 
 ## 当前状态
 
-`R0` 至 `R4` 已完成。`R5` 已完成 running-right、running-left、jumping、failed、waiting 的候选生产与增量 QA；running 行被安全系统拒绝且未产生候选，R5 因此仍未完成。`R6`、`R7` 未开始。
+`R0` 至 `R5` 已完成。九条标准行动画均已通过汇总结构检查，标准 8 × 9 联系表与循环预览已生成；它们仍是 planning / production QA 产物。`R6`、`R7` 未开始，等待用户审看标准行后继续。
