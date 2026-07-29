@@ -8,7 +8,7 @@
 
 ## 当前状态
 
-`refresh-3img-baseline-adopted-v2-packaged-and-locally-installed-no-pr`
+`refresh-3img-baseline-adopted-v2-motion-smoothing-in-progress-no-pr`
 
 已完成：在 refresh planning / production 分支创建本轮 plan、tasks、handoff 文档；接收并完成 idle / waving / review 三个候选图的 intake 与视觉 QA，结果记录于 `direction-b-refresh-3img-intake-and-qa.md`。用户已取消第 4 张输入，且已采用这三图定义的身份家族为新的 production baseline。
 
@@ -22,7 +22,7 @@ R6、R7 已完成：已建立 000°、090°、180°、270° 四方向锚点及 1
 
 ## 下一步
 
-下一步：重启或刷新 Codex 后，在宠物选择器中选择 `LinaBell`。若用户要求公开收录，再从本分支整理只含三件套的 clean PR；本分支仍不创建最终 PR。
+下一步：执行 R8 motion-smoothing refresh。Codex 运行时的动作间隔由应用固定，pet.json 没有可调 FPS 字段；idle 只会播放前六格，waving 只会播放前四格。因此需重做对应的已播放帧，使其成为更连续的过渡姿势，再进行预览、QA、回装与结构验证。若用户要求公开收录，再从本分支整理只含三件套的 clean PR；本分支仍不创建最终 PR。
 
 ## 重要边界
 
