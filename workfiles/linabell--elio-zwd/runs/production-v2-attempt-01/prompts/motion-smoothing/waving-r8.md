@@ -1,0 +1,9 @@
+Create exactly one horizontal 4-frame waving animation strip for the approved pink plush fox desktop pet. Use all attached images as mandatory identity, scale, and layout references. The layout guide is only for invisible slot spacing; never reproduce guide pixels.
+
+Output exactly 4 equally spaced, full-body poses from left to right on one perfectly uniform solid #6A00FF background. No labels, borders, grid, scenery, floor, shadows, effects, text, or extra candidates.
+
+Keep this exact identity unchanged: pastel-pink plush fox; large upright triangular ears; cream eye patches and muzzle; bright blue eyes with lashes; small pink nose; floppy pale-pink hat with its white flower and pink bow on the same canonical side; pink-and-pale-yellow plaid short-sleeved top; green neck bow and paired cherries; pink dotted skirt with lace; large fluffy pink tail with cream tip. Same high-detail 3D plush rendering. Never introduce blue sailor clothing or flip the hat ornament.
+
+The application plays only these four poses, so every pose must be a distinct, natural part of one smooth loop. Keep feet planted, character scale/baseline stable, and tail on the same side. Motion sequence: 1 relaxed greeting pose with the waving paw beginning to lift; 2 paw raised midway with a small outward rotation; 3 paw at the highest friendly peak, tilted toward the opposite side; 4 return arc midway back toward pose 1, arranged to loop smoothly to pose 1. The lifted paw must move continuously in one direction around the arc; do not make static duplicates, do not teleport the paw, and do not switch to a different arm. The other paw stays naturally lowered.
+
+No wave marks, motion lines, sparkles, text, symbols, shadows, blur, dust, extra limbs, human fingers, cropped body parts, or detached effects. Use crisp complete silhouettes with generous padding, suitable for extraction into four 192×208 sprite cells.

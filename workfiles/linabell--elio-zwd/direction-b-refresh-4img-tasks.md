@@ -8,8 +8,8 @@
 - [x] R5 remaining standard rows：running-right、独立生成的 running-left、jumping、failed、waiting、non-directional running 均已完成候选生产和增量结构检查。running 使用用户批准的无名称原地专注处理策略；镜像版 running-left 因尾尖分离碎片已拒绝，不计入生产素材。
 - [x] R6 directions：四方向锚点、十六方向环视、三人盲测及方向语义 QA 均完成；左侧中间四格曾重做以消除上下语义歧义。
 - [x] R7 final assembly and validation：已组装并验证 v2 `1536 × 2288` 正式图集，写入三件套并安装到本机 Codex；不在本分支创建最终 PR。
-- [ ] R8 motion-smoothing refresh：基于 Codex 运行时固定的播放节奏，重做默认 idle 的前六格与 waving 的前四格，使姿势过渡更连续；完成预览、QA、回装与验证。
+- [x] R8 motion-smoothing refresh：基于 Codex 运行时固定的播放节奏，重做默认 idle 的前六格与 waving 的前四格，使姿势过渡更连续；已完成预览、QA、回装与验证。
 
 ## 当前状态
 
-`R0` 至 `R7` 已完成；`R8 motion-smoothing refresh` 进行中。Codex 运行时不提供 pet 元数据 FPS 字段：idle 实际播放前六格，waving 实际播放前四格；本轮将以更连续的过渡姿势减少停顿感。当前正式图集仍为 `runs/production-v2-attempt-01/final/spritesheet-package-clean.webp`，三件套已安装至 `C:/Users/70455/.codex/pets/linabell--elio-zwd/`；未创建 PR、未修改 main。
+`R0` 至 `R8` 均已完成。R8 采用用户确认的眨眼 idle 与四格连续 waving，正式候选为 `runs/production-v2-attempt-01/candidates/motion-smoothing-r8/spritesheet-r8-clean.webp`；v2 验证和透明边缘处理通过，随后已回装三件套至 `C:/Users/70455/.codex/pets/linabell--elio-zwd/`。未创建 PR、未修改 main。

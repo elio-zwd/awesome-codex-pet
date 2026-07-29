@@ -1,0 +1,191 @@
+{
+  "ok": true,
+  "frames_root": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\candidates\\motion-smoothing-r8\\frames",
+  "states": [
+    "idle",
+    "waving"
+  ],
+  "errors": [],
+  "warnings": [
+    "idle used extraction method stable-slots; component extraction is preferred",
+    "waving used extraction method stable-slots; component extraction is preferred"
+  ],
+  "rows": [
+    {
+      "state": "idle",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "stable-slots",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "idle used extraction method stable-slots; component extraction is preferred"
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\candidates\\motion-smoothing-r8\\frames\\idle\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16575,
+          "bbox": [
+            35,
+            5,
+            157,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 196
+        },
+        {
+          "index": 1,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\candidates\\motion-smoothing-r8\\frames\\idle\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16247,
+          "bbox": [
+            36,
+            5,
+            156,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 209
+        },
+        {
+          "index": 2,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\candidates\\motion-smoothing-r8\\frames\\idle\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16191,
+          "bbox": [
+            36,
+            6,
+            156,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 188
+        },
+        {
+          "index": 3,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\candidates\\motion-smoothing-r8\\frames\\idle\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16034,
+          "bbox": [
+            37,
+            6,
+            155,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 196
+        },
+        {
+          "index": 4,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\candidates\\motion-smoothing-r8\\frames\\idle\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16106,
+          "bbox": [
+            36,
+            7,
+            156,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 204
+        },
+        {
+          "index": 5,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\candidates\\motion-smoothing-r8\\frames\\idle\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16262,
+          "bbox": [
+            35,
+            6,
+            157,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 192
+        }
+      ]
+    },
+    {
+      "state": "waving",
+      "expected_frames": 4,
+      "actual_frames": 4,
+      "extraction_method": "stable-slots",
+      "ok": true,
+      "errors": [],
+      "warnings": [
+        "waving used extraction method stable-slots; component extraction is preferred"
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\candidates\\motion-smoothing-r8\\frames\\waving\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16894,
+          "bbox": [
+            33,
+            8,
+            159,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 169
+        },
+        {
+          "index": 1,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\candidates\\motion-smoothing-r8\\frames\\waving\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17546,
+          "bbox": [
+            32,
+            8,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 182
+        },
+        {
+          "index": 2,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\candidates\\motion-smoothing-r8\\frames\\waving\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17378,
+          "bbox": [
+            32,
+            5,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 156
+        },
+        {
+          "index": 3,
+          "file": "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\production-v2-attempt-01\\candidates\\motion-smoothing-r8\\frames\\waving\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 17354,
+          "bbox": [
+            32,
+            8,
+            160,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 191
+        }
+      ]
+    }
+  ]
+}
