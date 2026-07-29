@@ -20,6 +20,8 @@
 
 用户已明确取消第 4 张输入。前三张（idle / waving / review）的 intake 与视觉 QA 现构成本轮完整评估范围，详见 `direction-b-refresh-3img-intake-and-qa.md`。结论为 **adopt**：采用这三图定义的粉色毛绒 LinaBell 身份家族作为新的 production baseline。review 候选另含基础身份中不存在的剪贴板，故该行在最终 production row 中仍须以无新增道具的专注姿态重做。
 
+R4 已形成透明 identity-row 候选 01：idle、waving 与无道具 review 的运行时行和 QA 预览已就绪，记录见 `direction-b-refresh-identity-rows-attempt-01-qa.md`。当前门禁为用户统一视觉批准；在批准前不继续其他标准动作行。
+
 ## 技术目标
 
 最终图集使用 `spriteVersionNumber: 2`，固定行顺序为：

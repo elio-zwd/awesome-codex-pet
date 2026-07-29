@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "chroma_key": {
+    "hex": "#6A00FF",
+    "rgb": [
+      106,
+      0,
+      255
+    ],
+    "threshold": 96.0
+  },
+  "rows": [
+    {
+      "state": "idle",
+      "frames": [
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\idle\\00.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\idle\\01.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\idle\\02.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\idle\\03.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\idle\\04.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\idle\\05.png"
+      ],
+      "method": "stable-slots"
+    },
+    {
+      "state": "waving",
+      "frames": [
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\waving\\00.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\waving\\01.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\waving\\02.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\waving\\03.png"
+      ],
+      "method": "stable-slots"
+    },
+    {
+      "state": "review",
+      "frames": [
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\review\\00.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\review\\01.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\review\\02.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\review\\03.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\review\\04.png",
+        "D:\\My_Elio\\codex-pet\\workfiles\\linabell--elio-zwd\\runs\\identity-rows-attempt-01\\frames\\review\\05.png"
+      ],
+      "method": "stable-slots"
+    }
+  ]
+}

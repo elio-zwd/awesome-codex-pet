@@ -8,18 +8,17 @@
 
 ## 当前状态
 
-`refresh-3img-baseline-adopted-running-right-row-qa-complete`
+`refresh-3img-baseline-adopted-identity-rows-qa-awaiting-user-approval`
 
 已完成：在 refresh planning / production 分支创建本轮 plan、tasks、handoff 文档；接收并完成 idle / waving / review 三个候选图的 intake 与视觉 QA，结果记录于 `direction-b-refresh-3img-intake-and-qa.md`。用户已取消第 4 张输入，且已采用这三图定义的身份家族为新的 production baseline。
 
-未完成：新基线的 identity rows 尚未统一为透明生产行，review 必须无道具重做。旧 running-right 候选、候选 01 与候选 02 均不合格：候选 01 改善下蹲却未呈现对侧四肢交替；候选 02 与三种新增步态锚点策略仍不能使 A/B 接触相在桌宠尺寸下可读。完整证据详见 `direction-b-refresh-running-right-local-attempt-01-qa.md` 和 `direction-b-refresh-running-right-attempt-02-and-anchor-qa.md`。
+已完成但待批准：identity-row 候选 01 已将 idle（6 帧）、waving（4 帧）及新生成的无道具 review（6 帧）透明化、注册并组装为 `1536 × 208` 单行。三行均通过结构检查（零错误）；未用格均为完全透明。`stable-slots` 策略留下的三条预期提示需要结合循环预览完成最终视觉确认。详细记录见 `direction-b-refresh-identity-rows-attempt-01-qa.md`。
 
 ## 下一步
 
-用户已选择 screen-space 交替验收并批准候选 03。该行已完成透明拆帧、`192 × 208` 注册、`1536 × 208` 单行组装和深色 QA 联系表/循环预览；结构检查零错误、零警告。此前候选及锚点仍不进入生产素材。之后：
+用户已选择 screen-space 交替验收并批准 running-right 候选 03。该行已完成透明拆帧、`192 × 208` 注册、`1536 × 208` 单行组装和深色 QA 联系表/循环预览；结构检查零错误、零警告。此前候选及锚点仍不进入生产素材。
 
-- 若 adopt：将其标为新的 production baseline，核对旧 idle / waving / review 是否仍一致；不一致则重做，并在用户批准三行 identity QA 后继续其余动作。
-- 若 reject：记录具体原因，明确继续沿用此前 baseline，并从 running-right 继续推进。
+下一步：请用户查看 `runs/identity-rows-attempt-01/qa/identity-rows-contact-sheet-dark.png` 及三个循环预览，并对 idle / waving / review 统一批准或提出修改。仅在这三行批准后，继续 R5 的 running-left、running、jumping、failed、waiting。
 
 ## 重要边界
 
