@@ -1,0 +1,21 @@
+{
+  "visual_qa": "pass",
+  "qa_status": "pass",
+  "severity": "minor",
+  "regression_flags": [
+    {
+      "id": "blind_vertical_7",
+      "severity": "minor",
+      "status": "accepted",
+      "detail": "仅涉及 247.5° / 292.5° 的中间垂直轴盲测提示；标注方向图仍分别可读为下左与上左。"
+    },
+    {
+      "id": "look_continuity_metrics",
+      "severity": "minor",
+      "status": "reviewed",
+      "detail": "157.5°→180° 与 337.5°→000° 的指标差值偏高，但未见明显缩放跳变、断裂或身份变化。"
+    }
+  ],
+  "notes": "11 行身份、材质、帽饰、裙装、尾巴与四肢一致；动作可读；四个方向锚点清楚；16 格顺时针循环正确；透明边缘、尺寸与 v2 结构验证均通过。",
+  "recommended_next_action": "可交付并安装。"
+}

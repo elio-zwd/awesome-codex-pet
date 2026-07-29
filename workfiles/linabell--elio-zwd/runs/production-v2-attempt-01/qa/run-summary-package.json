@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "spritesheet": "final/spritesheet-package-clean.webp",
+  "validation": "final/validation-package.json",
+  "chroma_despill": "qa/chroma-despill-package.json",
+  "contact_sheet": "qa/contact-sheet-package.png",
+  "direction_sheet": "qa/look-directions-package.png",
+  "direction_semantics": "qa/direction-semantics.json",
+  "blind_direction_validation": "qa/direction-blind-validation.json",
+  "blind_review_resolution": "qa/blind-review-resolution.json",
+  "continuity": "qa/look-continuity.json",
+  "review": "qa/review.json",
+  "package": "pets/linabell--elio-zwd",
+  "local_install": "C:/Users/70455/.codex/pets/linabell--elio-zwd"
+}

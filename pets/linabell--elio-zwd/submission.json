@@ -1,0 +1,25 @@
+{
+  "slug": "linabell--elio-zwd",
+  "pet_slug": "linabell",
+  "author_slug": "elio-zwd",
+  "name": "LinaBell",
+  "localized_names": {
+    "en": "LinaBell",
+    "zh": "玲娜贝儿"
+  },
+  "author": "elio-zwd",
+  "author_handle": "elio-zwd",
+  "author_url": "https://github.com/elio-zwd",
+  "primary_category": "Mascots",
+  "canonical_key": "fictional/disney/linabell",
+  "tags": ["fox", "plush", "pink", "3d", "character"],
+  "source_type": "fan-art",
+  "source_url": "",
+  "license": "CC BY-NC 4.0",
+  "description": "An AI-generated LinaBell-inspired plush fox Codex pet with pink fur, a flowered hat, a cherry dress, nine action rows, and sixteen clockwise look directions.",
+  "preview_image": "../../assets/previews/linabell--elio-zwd/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  }
+}
